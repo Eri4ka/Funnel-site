@@ -1,0 +1,303 @@
+.header {
+    &-content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.5% 3.9% 0 3.3%;
+        max-width: 1785px;
+    }
+
+    &-logo {
+        margin-right: 3%;
+
+        &__wrapper {
+            max-width: 100px;
+            min-width: 48px;
+        }
+
+        &__icon {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-burger {
+        &__wrapper {
+            width: 56px;
+            height: 56px;
+            border: 1px solid #4c858b;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &:hover .header-burger__icon {
+                transform: rotateZ(180deg);
+            }
+
+            &_section {
+                width: 56px;
+                height: 56px;
+                border: 1px solid #4c858b;
+                border-radius: 50%;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                &:hover .header-burger__icon {
+                    transform: rotateZ(180deg);
+                }
+            }
+        }
+
+        &__icon {
+            height: 22px;
+            width: 22px;
+            color: $green;
+            transition: 0.2s;
+        }
+    }
+
+    &-nav {
+        width: 35%;
+        margin-right: 6%;
+        margin-left: 1.5%;
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+
+        &__item {
+            color: $green;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.83vw;
+            cursor: pointer;
+        }
+    }
+
+    &-call {
+        display: flex;
+        justify-content: space-between;
+        width: 21%;
+        margin-right: 3.6%;
+
+        &__phone {
+            letter-spacing: 1.1;
+            font-size: 0.83vw;
+        }
+
+        &__bold {
+            font-weight: 700;
+        }
+
+        &__link {
+            position: relative;
+            font-size: 0.73vw;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $red-strong;
+            cursor: pointer;
+
+            &::after {
+                content: '';
+                position: absolute;
+                border: 1px dashed $red-strong;
+                width: 100%;
+                left: 0;
+                bottom: -5px;
+            }
+        }
+    }
+
+    &-contacts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 115px;
+        width: 100%;
+        margin-right: 3.4%;
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            color: $green;
+            transition: 0.2s;
+
+            &:hover {
+                fill: $red;
+            }
+        }
+    }
+
+    &-sections {
+        display: flex;
+        justify-content: space-between;
+        max-width: 200px;
+        width: 100%;
+
+        &__wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $icon-border;
+            border-radius: 50%;
+            height: 56px;
+            width: 56px;
+            transition: 0.2s;
+            cursor: pointer;
+
+            &:hover {
+                border-color: $green;
+            }
+        }
+
+        &__icon {
+            height: 23px;
+            width: 23px;
+
+            &-green {
+                color: $green;
+            }
+
+            &-red {
+                color: $red;
+            }
+        }
+
+        &__total {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 21px;
+            height: 21px;
+            background-color: $red;
+            border-radius: 50%;
+            font-size: 11px;
+            color: $white;
+            font-weight: 800;
+            text-align: center;
+            line-height: 21px;
+        }
+    }
+}
+
+@media screen and (max-width: $desktop) {
+    .header {
+        &-nav {
+            display: none;
+        }
+
+        &-burger {
+            display: none;
+
+            &__wrapper {
+                &_section {
+                    display: flex;
+                }
+            }
+        }
+
+        &-call {
+            display: none;
+        }
+
+        &-sections {
+            max-width: 272px;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .header {
+        &-content {
+            margin: 3.5% 2% 0 2%;
+
+            &::after {
+                content: '';
+                position: absolute;
+                border: 1px solid $icon-border;
+                width: 100%;
+                left: 0;
+                bottom: -23px;
+            }
+        }
+
+        &-logo {
+            &__wrapper {
+                max-width: 64px;
+            }
+        }
+
+        &-contacts {
+            display: none;
+        }
+
+        &-sections {
+            max-width: 295px;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .header {
+        &-content {
+            margin: 5% 4.7% 0 4.7%;
+
+            &::after {
+                bottom: -16px;
+            }
+        }
+        &-logo {
+            &__wrapper {
+                max-width: 48px;
+            }
+        }
+        &-burger {
+            display: none;
+
+            &__wrapper {
+                &_section {
+                    height: 44px;
+                    width: 44px;
+                }
+            }
+            &__icon {
+                height: 18px;
+                width: 18px;
+            }
+        }
+        &-sections {
+            max-width: 110px;
+            &__wrapper {
+                height: 44px;
+                width: 44px;
+                &:nth-child(1) {
+                    display: none;
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+
+            &__icon {
+                height: 18px;
+                width: 18px;
+            }
+
+            &__total {
+                right: -7;
+            }
+        }
+    }
+}

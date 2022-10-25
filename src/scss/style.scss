@@ -1,0 +1,27 @@
+@import './fonts/fonts.scss';
+@import './helpers/variables.scss';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+}
+
+.orange {
+    color: $orange;
+}
+
+@import './modules/svgsprite.scss';
+@import './modules/header.scss';
+@import './modules/main.scss';
+@import './modules/breadcrumbs.scss';

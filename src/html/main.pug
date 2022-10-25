@@ -1,0 +1,39 @@
+main.main
+    article.main-content
+        section.main-head
+            h1.main-head__text Монтаж дымоходов
+        include breadcrumbs
+        section.main-about
+            p.main-about__text.
+                В #[span.main-about__title Дымоход.Ру] вам помогут как приобрести, так и установить дымоход любой конфигурации. В нашем монтажном отделе, состоящим из трёх бригад работают квалифицированные специалисты, которые ежегодно проходят курсы повышения квалификации. Все работы проводим качественно и аккуратно, в короткий срок и на совесть.
+        section.main-info
+            .main-info__content
+                p.main-info__title Lorem ipsum dolor sit amet
+                span.main-info__decorate Lorem ipsum
+                ul.list.main-info__list
+                    li.main-info__item Доступные Цены
+                    li.main-info__item Собственное производство Дымоходов
+                    li.main-info__item Выполнение необходимых работ, связанных с установкой камина, печи, котла
+                    li.main-info__item Гарантия (от трёх до десяти лет)
+                    li.main-info__item Работаем чисто, аккуратно, убираем за собой, не сквернословим
+                    li.main-info__item Только русские квалифицированные специалисты
+                    li.main-info__item Устанавливаем любые дымоходы всех производителей
+            .main-info__picture
+                .main-info__wrapper
+                    +svgsprite('Blob')
+                    .main-info__image 
+                        img(class="main-info__core" src="./img/logo/dym.png")
+                    .main-info__block.main-info__block_top
+                        +svgsprite('dots')
+                    .main-info__block.main-info__block_bottom
+                        +svgsprite('dots')
+                    .main-info__triangle.main-info__triangle_three
+                        +svgsprite('triangle')
+                        +svgsprite('triangle', 'orange')
+                        +svgsprite('triangle')
+                    .main-info__triangle.main-info__triangle_two
+                        +svgsprite('triangle')
+                        +svgsprite('triangle', 'orange')
+                        +svgsprite('triangle')
+
+                

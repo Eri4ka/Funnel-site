@@ -1,0 +1,43 @@
+header.header
+    .header-content
+        .header-logo
+            .header-logo__wrapper
+                img.header-logo__icon(src="./img/logo/Logo.png")
+        .header-burger
+            .header-burger__wrapper
+                .header-burger__icon
+                    +svgsprite('burger')
+        nav.header-nav
+            ul.header-nav__list 
+                li.header-nav__item Каталог товаров
+                li.header-nav__item Доставка и оплата
+                li.header-nav__item Цены
+                li.header-nav__item Контакты
+        .header-call
+            p.header-call__phone +7 (812) 
+                span.header-call__bold 509 21 98
+            a.header-call__link перезвоните мне
+        .header-contacts 
+            a.link.header-contacts__wrapper(href="#")
+                +svgsprite('vk')
+            a.link.header-contacts__wrapper(href="#")
+                +svgsprite('tg')
+            a.link.header-contacts__wrapper(href="#")
+                +svgsprite('inst')
+            a.link.header-contacts__wrapper(href="#")
+                +svgsprite('whats')
+        .header-sections
+            .header-sections__wrapper
+                .header-sections__icon
+                    +svgsprite('loupe', 'header-sections__icon-green')
+            .header-sections__wrapper
+                .header-sections__icon
+                    +svgsprite('heart', 'header-sections__icon-red')
+            .header-sections__wrapper
+                .header-sections__icon
+                    +svgsprite('cart')
+                .header-sections__total 10
+            .header-burger__wrapper_section
+                .header-burger__icon
+                    +svgsprite('burger')
+                

@@ -1,0 +1,110 @@
+.main {
+    &-content {
+        max-width: 1218px;
+        margin: 55px auto;
+    }
+    &-head {
+        margin-bottom: 36px;
+        &__text {
+            font-size: 60px;
+        }
+    }
+    &-about {
+        margin-bottom: 44px;
+        &__text {
+            line-height: 30px;
+        }
+        &__title {
+            color: $red;
+            font-weight: 700;
+        }
+    }
+    &-info {
+        display: flex;
+        &__content {
+            width: 50%;
+        }
+        &__title {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 63px;
+        }
+        &__decorate {
+            font-size: 50px;
+            font-weight: 800;
+            color: $red;
+            text-transform: uppercase;
+            line-height: 63px;
+            margin-bottom: 40px;
+        }
+        &__list {
+            margin: 40px 54px 0 54px;
+        }
+        &__item {
+            position: relative;
+            margin-bottom: 30px;
+            &::before {
+                content: '';
+                position: absolute;
+                height: 9px;
+                width: 9px;
+                background-color: $orange;
+                border-radius: 50%;
+                top: 5px;
+                left: -25px;
+            }
+        }
+        &__picture {
+            width: 50%;
+        }
+        &__wrapper {
+            position: relative;
+            width: 774px;
+            height: 541px;
+            color: $green;
+        }
+        &__image {
+            position: absolute;
+            max-width: 477px;
+            max-height: 459px;
+            width: 100%;
+            height: 100%;
+            top: -28px;
+            left: 183px;
+        }
+        &__core {
+            width: 100%;
+            height: 100%;
+        }
+        &__block {
+            position: absolute;
+            width: 36px;
+            height: 147px;
+            color: $black;
+            &_top {
+                top: 5px;
+                left: 150px;
+            }
+            &_bottom {
+                bottom: -32px;
+                right: 66px;
+            }
+        }
+        &__triangle {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 78px;
+            height: 19px;
+            color: $green;
+            &_two {
+                top: 55px;
+                right: 8px;
+            }
+            &_three {
+                top: 150px;
+                left: 20px;
+            }
+        }
+    }
+}

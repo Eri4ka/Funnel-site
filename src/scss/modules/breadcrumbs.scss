@@ -1,0 +1,45 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    border-top: 1px solid $icon-border;
+    border-bottom: 1px solid $icon-border;
+    margin-bottom: 85px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        position: relative;
+        color: $grey;
+        margin-right: 20px;
+        font-size: 12px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: url('../../img/icons/rightarrow.svg');
+            top: 5px;
+            right: -15px;
+            height: 7px;
+            width: 7px;
+        }
+
+        &:last-child {
+            margin: 0;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &_active {
+            color: $green;
+        }
+    }
+
+    &__link {
+    }
+}
