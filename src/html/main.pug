@@ -35,5 +35,86 @@ main.main
                         +svgsprite('triangle')
                         +svgsprite('triangle', 'orange')
                         +svgsprite('triangle')
+        section.main-process 
+            h3.main-process__head Процесс выполнения монтажа
+            ul.list.main-process__list
+                li.main-process__item
+                    span.main-process__number 1
+                    p.main-process__text Рассчёт предварительной заявки
+                li.main-process__item 
+                    span.main-process__number 2
+                    p.main-process__text Замер объекта нашим инженером
+                li.main-process__item  
+                    span.main-process__number 3
+                    p.main-process__text Составление Коммерческого предложения по изделиям дымохода и окончательной сметы на  работы
+                li.main-process__item 
+                    span.main-process__number 4
+                    p.main-process__text Изготовление Дымохода, покраска (если требуется)
+                li.main-process__item 
+                    span.main-process__number 5
+                    p.main-process__text Монтаж продукции, проверка и наладкапробный запуск системы и последующая эксплуатация
+                li.main-process__item 
+                    span.main-process__number 6
+                    p.main-process__text Гарантийное обслуживание по соответствующем сроку
+        section.main-why
+            h3.main-why__head Почему Дымоход.ру?
+            p.main-why__content В отличие от других производителей, мы ручаемся за качество продукции, т.к. все Дымоходы изготавливаются из качественной стали, проверенного теплоизолятора, по современной технологии плазменной сварки «встык»
+            ul.list.main-why__list
+                li.main-why__item
+                    .main-why__wrapper
+                        +svgsprite('guarantee')
+                    h4.main-why__tittle Большой гарантийный срок
+                    p.main-why__text Крепёж, стыковка элементов – #[span.main-why__span 10 лет]
+                    p.main-why__text Сквозная коррозия труб – #[span.main-why__span 5 лет]
+                    p.main-why__text Гидроизоляция – #[span.main-why__span 3 года]
+                li.main-why__item
+                    .main-why__wrapper
+                        +svgsprite('architect')
+                    h4.main-why__tittle Помощь в покупке агрегата 
+                    p.main-why__text (печи, камина, котла), а также качественной установке на объекте с последующим гарантийным сервисом
+                li.main-why__item
+                    .main-why__wrapper
+                        +svgsprite('review')
+                    h4.main-why__tittle Реальные отзывы клиентов
+                    p.main-why__text Убедитесь в добросовестности исполнения, прочитав Отзывы клиентов в специальном разделе.
+        section.main-feedback 
+            .main-feedback__head 
+                h2.main-feedback__title Необходима консультация?
+                p.main-feedback__text оставьте заявку или свяжитесь с нами в социальных сетях
+            .main-feedback__social 
+                a.link.main-feedback__wrapper(href="#")
+                    +svgsprite('vk')
+                a.link.main-feedback__wrapper(href="#")
+                    +svgsprite('tg')
+                a.link.main-feedback__wrapper(href="#")
+                    +svgsprite('inst')
+                a.link.main-feedback__wrapper(href="#")
+                    +svgsprite('whats')
+            form.main-form
+                .main-form__title 
+                    p.main-form__maintext Для #[span.main-form__span консультации] заполните форму!
+                    p.main-form__text С Вами свяжутся в ближайшее время
+                .main-form__fields
+                    +input("text", "Ваше имя", "name")
+                    +input("phone", "Ваш телефон", "phone")
+                    button(class="main-form__button", type="submit") отправить
+        section.main-video 
+            h3.main-video__head Видео об установке
+            p.main-video__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .main-video__content
+                .main-video__wrapper
+                    .main-video__figure
+                        +svgsprite('blobvideo')
+                    .main-video__dots.main-video__dots1
+                        +svgsprite('dots')
+                .main-video__wrapper2
+                    .main-video__figure
+                        +svgsprite('blobvideo')
+                    .main-video__dots.main-video__dots2
+                        +svgsprite('dots')
+                .main-video__player
+                    iframe(width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ", frameborder="0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen) 
+
+
 
                 
