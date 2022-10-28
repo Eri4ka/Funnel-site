@@ -1,1 +1,64 @@
-footer
+footer.footer 
+    .footer-wrapper
+        .footer-catalog
+            p.footer-catalog__head Каталог
+            ul.list.footer-catalog__list
+                li.footer-catalog__item
+                    a.link.footer-catalog__link Дымоходы
+                li.footer-catalog__item
+                    a.link.footer-catalog__link Дымососы
+                li.footer-catalog__item
+                    a.link.footer-catalog__link Печи для дома
+                li.footer-catalog__item
+                    a.link.footer-catalog__link Печи для бани
+                li.footer-catalog__item
+                    a.link.footer-catalog__link Камины
+                li.footer-catalog__item
+                    a.link.footer-catalog__link Силикат кальция
+                li.footer-catalog__item
+                    a.link.footer-catalog__link Котлы
+                li.footer-catalog__item
+                    a.link.footer-catalog__link Ещё
+        .footer-info 
+            p.footer-info__head Информация
+            ul.list.footer-info__list
+                li.footer-info__item
+                    a.link.footer-info__link Каталог
+                li.footer-info__item
+                    a.link.footer-info__link Установка и монтаж
+                li.footer-info__item
+                    a.link.footer-info__link Отзывы
+                li.footer-info__item
+                    a.link.footer-info__link Ликвидация товара
+                li.footer-info__item
+                    a.link.footer-info__link Полезное
+                li.footer-info__item
+                    a.link.footer-info__link Контакты
+                li.footer-info__item
+                    a.link.footer-info__link Оплата и доставка
+        .footer-about 
+            .footer-adress 
+                p.footer-adress__head Время работы
+                .footer-adress__time
+                    .footer-adress__content
+                        .footer-adress__wrapper
+                            +svgsprite('clock')
+                        .footer-adress__block
+                            span.footer-adress__days пн-пт
+                            p.footer-adress__hours 9:00 - 20:00
+                        .footer-adress__block
+                            span.footer-adress__days сб-вс
+                            p.footer-adress__hours 10:00 - 18:00
+                    .footer-adress__content
+                        .footer-adress__wrapper
+                            +svgsprite('place')
+                        p.footer-adress__location г. Санкт - Петербург ,ул. Тамбасова д.7
+            .footer-social
+                a.link.footer-social__wrapper(href="#")
+                    +svgsprite('vk')
+                a.link.footer-social__wrapper(href="#")
+                    +svgsprite('tg')
+                a.link.footer-social__wrapper(href="#")
+                    +svgsprite('inst')
+                a.link.footer-social__wrapper(href="#")
+                    +svgsprite('whats')

@@ -43,3 +43,15 @@
     &__link {
     }
 }
+
+@media screen and (max-width: $tablet) {
+    .breadcrumbs {
+        margin-bottom: 61px;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .breadcrumbs {
+        margin-bottom: 17px;
+    }
+}

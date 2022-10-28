@@ -1,0 +1,103 @@
+.footer {
+    background-color: $footer;
+    &-wrapper {
+        max-width: 1218px;
+        padding: 89px 0 92px 0;
+        margin: 0 auto;
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-catalog {
+        &__head {
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 17px;
+        }
+        &__list {
+            font-size: 14px;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 18px 97px;
+        }
+    }
+    &-info {
+        &__head {
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 17px;
+        }
+        &__list {
+            font-size: 14px;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 18px 97px;
+        }
+    }
+    &-adress {
+        &__head {
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        &__time {
+            margin-bottom: 32px;
+        }
+        &__content {
+            display: flex;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        &__wrapper {
+            height: 17px;
+            width: 17px;
+            color: $green;
+            margin-right: 8px;
+        }
+        &__block {
+            display: flex;
+            margin-right: 10px;
+        }
+        &__days {
+            color: $green;
+            margin-right: 5px;
+        }
+    }
+    &-social {
+        display: flex;
+        justify-content: space-between;
+        max-width: 210px;
+        width: 100%;
+        &__wrapper {
+            height: 22px;
+            width: 22px;
+            color: $green;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .footer {
+        &-wrapper {
+            justify-content: center;
+            padding: 25px 0 26px 0;
+        }
+        &-catalog {
+            display: none;
+        }
+        &-info {
+            display: none;
+        }
+        &-adress {
+            display: none;
+        }
+        &-social {
+            width: 211px;
+        }
+    }
+}
